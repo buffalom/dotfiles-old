@@ -61,3 +61,6 @@ function email-guess() {
     echo "Configuring user.email as $email"
     git config user.email $email
 }
+
+# Register git hooks
+git config --global core.hooksPath ~/.dotfiles/git-hooks
