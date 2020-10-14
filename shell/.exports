@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Path to dotfiles
+export DOTFILESDIR="$HOME/Projects/dotfiles"
+
+# Make vim the default editor
+export EDITOR="vim"
+
+# Config autosuggest color
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+
+# Composer
+export PATH="$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="$PATH:$(composer config -g home)/vendor/bin"
+export COMPOSER_MEMORY_LIMIT=-1
