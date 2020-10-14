@@ -45,3 +45,19 @@ alias php71="phpv php@7.1"
 alias php72="phpv php@7.2"
 alias php73="phpv php@7.3"
 alias php74="phpv php@7.4"
+
+# Guess email for git user
+function email-guess() {
+    remote=`git remote -v | awk '/\(push\)$/ {print $2}'`
+    email=mail@tomdgm.ch # default
+
+    if [[ $remote == *github.com:teamnovu* ]]; then
+        email=diggelmann@novu.ch
+    fi
+    if [[ $remote == *github.com:insurando* ]]; then
+        email=diggelmann@novu.ch
+    fi
+
+    echo "Configuring user.email as $email"
+    git config user.email $email
+}
