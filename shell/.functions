@@ -64,6 +64,3 @@ function email-guess() {
     echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
     git config user.email $email
 }
-
-# Register git hooks
-git config --global core.hooksPath ~/.dotfiles/git-hooks
