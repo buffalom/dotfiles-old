@@ -79,7 +79,7 @@
     "Blue Component" : 0.58823529411764708,
     "Green Component" : 0.58039215686274515
   },
-  "Working Directory" : "\/Users\/tom",
+  "Working Directory" : "~\/Projects",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
@@ -418,7 +418,7 @@
     "Blue Component" : 0,
     "Green Component" : 0.59999999999999998
   },
-  "Custom Directory" : "Recycle",
+  "Custom Directory" : "Yes",
   "Ansi 4 Color" : {
     "Red Component" : 0.14901960784313725,
     "Color Space" : "sRGB",
