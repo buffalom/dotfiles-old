@@ -48,6 +48,9 @@ alias php74="phpv php@7.4"
 
 # Guess email for git user
 function email-guess() {
+    GREEN="\033[32m"
+    NOCOLOR="\033[0m"
+
     remote=`git remote -v | awk '/\(push\)$/ {print $2}'`
     email=mail@tomdgm.ch # default
 
@@ -58,7 +61,7 @@ function email-guess() {
         email=diggelmann@novu.ch
     fi
 
-    echo "Configuring user.email as $email"
+    echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
     git config user.email $email
 }
 
