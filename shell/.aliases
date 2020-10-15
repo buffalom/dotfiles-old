@@ -5,10 +5,6 @@
 alias a="php artisan"
 alias please="php please"
 
-# Git
-# ---------------
-alias cara="git commit --amend --reset-author"
-
 # SSH
 # ---------------
 alias copykey='command cat ~/.ssh/id_rsa.pub | pbcopy'
