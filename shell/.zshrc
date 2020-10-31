@@ -168,4 +168,4 @@ unset file
 
 # fnm
 export PATH=/Users/tom/.fnm:$PATH
-eval "`fnm env --multi`"
+eval "`fnm env`"
