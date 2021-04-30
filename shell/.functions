@@ -67,3 +67,8 @@ function email-guess() {
     echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
     git config user.email $email
 }
+
+# Delete unused git branches
+function groot() {
+    git branch --merged | grep -v 'master' | grep -v 'develop' | grep -v '*' | xargs git branch -d;
+}
