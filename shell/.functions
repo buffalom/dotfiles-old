@@ -60,6 +60,9 @@ function email-guess() {
     if [[ $remote == *github.com:insurando* ]]; then
         email=diggelmann@novu.ch
     fi
+    if [[ $remote == *github.com:nmbrz* ]]; then
+        email=diggelmann@novu.ch
+    fi
 
     echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
     git config user.email $email
