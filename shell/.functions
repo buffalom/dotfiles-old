@@ -55,13 +55,13 @@ function email-guess() {
     email=mail@tomdgm.ch # default
 
     if [[ $remote == *github.com:teamnovu* ]]; then
-        email=diggelmann@novu.ch
-    fi
-    if [[ $remote == *github.com:insurando* ]]; then
-        email=diggelmann@novu.ch
+        email=tom.diggelmann@novu.ch
     fi
     if [[ $remote == *github.com:nmbrz* ]]; then
-        email=diggelmann@novu.ch
+        email=tom.diggelmann@novu.ch
+    fi
+    if [[ $remote == *projects.lernetz.ch* ]]; then
+        email=tom.diggelmann@novu.ch
     fi
 
     echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
