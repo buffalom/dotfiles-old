@@ -54,8 +54,9 @@ echo '------------'
 ln -s $DOTFILESDIR/zshrc/remy.zsh-theme $HOME/.oh-my-zsh/custom/themes/remy.zsh-theme
 
 # Activate z
-cd ~/.dotfiles/shell
-chmod +x z.sh
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+# cd ~/.dotfiles/shell
+# chmod +x z.sh
 
 echo 'Install homebrew'
 echo '----------------'
