@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# PHP
+# ---------------
+alias phpunit="vendor/bin/phpunit"
+alias phpunitw="phpunit-watcher watch"
+alias pest="./vendor/bin/pest"
+alias pestw="pest --watch $@"
+
 # Laravel
 # ---------------
 alias a="php artisan"
