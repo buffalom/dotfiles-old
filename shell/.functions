@@ -53,19 +53,25 @@ function email-guess() {
 
     remote=`git remote -v | awk '/\(push\)$/ {print $2}'`
     email=mail@tomdgm.ch # default
+    signingkey=E5F520B22967C1E1 # default
 
     if [[ $remote == *github.com:teamnovu* ]]; then
         email=tom.diggelmann@novu.ch
+        signingkey=27D2441DEA447A80
     fi
     if [[ $remote == *github.com:nmbrz* ]]; then
         email=tom.diggelmann@novu.ch
+        signingkey=27D2441DEA447A80
     fi
     if [[ $remote == *projects.lernetz.ch* ]]; then
         email=tom.diggelmann@novu.ch
+        signingkey=27D2441DEA447A80
     fi
 
     echo -e "${GREEN}Configuring user.email as $email${NOCOLOR}"
     git config user.email $email
+    echo -e "${GREEN}Configuring user.signingkey as $signingkey${NOCOLOR}"
+    git config user.signingkey $signingkey
 }
 
 # Delete unused git branches

@@ -26,3 +26,14 @@
     au = add -u
     ap = add -p
     cara = "!git commit --amend --reset-author"
+
+[user]
+  name = Tom Diggelmann
+  email = mail@tomdgm.ch
+  signingkey = E5F520B22967C1E1
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+[commit]
+  gpgsign = true
